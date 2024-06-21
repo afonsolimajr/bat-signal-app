@@ -5,9 +5,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
-    backgroundColor: "yellow",
+    backgroundColor: "#323232",
     alignItems: "center",
     justifyContent: "center",
-    padding: 15,
+    padding: 10,
   },
 });

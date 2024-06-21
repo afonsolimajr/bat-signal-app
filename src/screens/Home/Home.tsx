@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { View } from "react-native";
 
 import { styles } from "./styles";
@@ -6,17 +6,23 @@ import { Default } from "../../frames/Default/Default";
 import { Form } from "../../frames/Form/Form";
 
 export function Home() {
+  const [ativo, setAtivo] = useState(false);
+
   function handleAtivar() {
-    console.log("ativar");
+    setAtivo(true);
   }
 
   function handleEnviar() {
-    console.log("enviar");
+    setAtivo(false);
   }
+
   return (
     <View style={styles.container}>
-      {/* <Default /> */}
-      <Form />
+      {ativo ? (
+        <Form onEnviar={handleEnviar} />
+      ) : (
+        <Default onAtivar={handleAtivar} />
+      )}
     </View>
   );
 }

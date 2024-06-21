@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StatusBar, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
@@ -8,6 +8,8 @@ export const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 15,
     gap: 10,
+    borderRadius: 10,
+    marginTop: StatusBar.currentHeight,
   },
   logo: {
     width: 70,
