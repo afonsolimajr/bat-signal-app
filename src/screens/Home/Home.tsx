@@ -6,10 +6,17 @@ import { Default } from "../../frames/Default/Default";
 import { Form } from "../../frames/Form/Form";
 
 export function Home() {
+  function handleAtivar() {
+    console.log("ativar");
+  }
+
+  function handleEnviar() {
+    console.log("enviar");
+  }
   return (
     <View style={styles.container}>
-      <Default />
-      {/* <Form /> */}
+      {/* <Default /> */}
+      <Form />
     </View>
   );
 }
