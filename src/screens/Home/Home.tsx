@@ -9,7 +9,7 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Default />
-      <Form />
+      {/* <Form /> */}
     </View>
   );
 }
